@@ -53,13 +53,7 @@ class GameFragment : Fragment() {
         Log.i("EIIIII", "Called ViewModelProviders.of")
         viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
 
-        binding.correctButton.setOnClickListener {
-            viewModel.onCorrect()
-        }
-        binding.skipButton.setOnClickListener {
-            viewModel.onSkip()
-        }
-
+        binding.gameViewModel = viewModel
 
         /** Setting up LiveData observation relationship **/
         viewModel.score.observe(viewLifecycleOwner, Observer { newScore ->
