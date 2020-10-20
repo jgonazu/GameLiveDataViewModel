@@ -9,7 +9,7 @@ import androidx.lifecycle.ViewModel
 /**
  * GameViewModel
  *
- * @author (c) 2020, Payment Solutions, BBVA
+ * @author (c) 2020, jgonazu
  */
 class GameViewModel: ViewModel() {
     // The current word
@@ -49,7 +49,7 @@ class GameViewModel: ViewModel() {
         // This is the number of milliseconds in a second
         const val ONE_SECOND = 1000L
         // This is the total time of the game
-        const val COUNTDOWN_TIME = 60000L
+        const val COUNTDOWN_TIME = 20000L
     }
 
     private var timer: CountDownTimer
